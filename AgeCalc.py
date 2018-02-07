@@ -14,12 +14,14 @@ month = pm-bm
 day = pd-bd
 
 
-if month<0:
-    month+=12
-    age-=1
+
 if day<0:
-    day+=30
-    month-=1
+    day += 30
+    month -= 1
+
+if month < 0:
+    month += 12
+    age -= 1
 
 print()
 print('You are aproximately,',age,'years,',month,'months and',day,'days old')
