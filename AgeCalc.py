@@ -9,19 +9,21 @@ pd = int(input('Present Date:'))
 pm = int(input('Enter Present Month: '))
 py = int(input('Enter present Year: '))
 
-age = py-by
-month = pm-bm
-day = pd-bd
+if (bd or pd)>30 or (bm or pm)>12 or (by>py) or (bd or pd)<0 or (bm or pm)<0:
+    print('Invalid entry!!')
+    exit()
 
-
+age = py - by
+month = pm - bm
+day = pd - bd
 
 if day<0:
     day += 30
     month -= 1
 
-if month < 0:
+if month<0:
     month += 12
     age -= 1
 
 print()
-print('You are aproximately,',age,'years,',month,'months and',day,'days old')
+print('You are aproximately,', age, 'years,', month, 'months and', day, 'days old')
