@@ -9,7 +9,8 @@ pd = int(input('Present Date:'))
 pm = int(input('Enter Present Month: '))
 py = int(input('Enter present Year: '))
 
-if (bd or pd)>30 or (bm or pm)>12 or (by>py) or (bd or pd)<0 or (bm or pm)<0:
+if (bd>30 or pd>30) or (bm>12 or pm>12) or (by>py) or (bd or pd)<0 or (bm<0 or pm<0 or py<0 or by<0):
+    print()
     print('Invalid entry!!')
     exit()
 
